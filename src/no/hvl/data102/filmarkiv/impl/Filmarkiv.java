@@ -4,7 +4,6 @@ import no.hvl.data102.filmarkiv.adt.Film;
 import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
 import no.hvl.data102.filmarkiv.adt.Sjanger;
 
-public class Filmarkiv {
 	public class Filmarkiv implements FilmarkivADT {
 
 	    private Film[] filmer;
@@ -103,5 +102,5 @@ public class Filmarkiv {
 	        return trimmetTabell;
 	    }
 	}
-}
-}
+
+
