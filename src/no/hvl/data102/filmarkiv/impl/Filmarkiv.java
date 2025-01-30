@@ -1,8 +1,6 @@
 package no.hvl.data102.filmarkiv.impl;
 
-import no.hvl.data102.filmarkiv.adt.Film;
 import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
-import no.hvl.data102.filmarkiv.adt.Sjanger;
 
 	public class Filmarkiv implements FilmarkivADT {
 
@@ -100,6 +98,21 @@ import no.hvl.data102.filmarkiv.adt.Sjanger;
 	        Film[] trimmetTabell = new Film[antallElementer];
 	        System.arraycopy(tabell, 0, trimmetTabell, 0, antallElementer);
 	        return trimmetTabell;
+	    }
+
+		@Override
+		public boolean tomArkiv() {
+			for (int i = 0; i < antall; i++) {      
+	                // Flytt siste film til den slettede filmens plass
+	                filmer[i] = filmer[antall - 1];
+	                filmer[antall - 1] = null; 
+	                antall--;
+	        }
+
+	        if (antall == 0) {
+	        	return true;
+	        }
+	        return false;
 	    }
 	}
 

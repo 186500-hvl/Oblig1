@@ -26,7 +26,14 @@ public interface FilmarkivADT {
      * @return true dersom filmen ble slettet, false ellers
      */
     boolean slettFilm(int filmnr);
-
+    
+    /**
+     * Sletter alle filmer i et arkiv
+     * 
+     * @return true dersom arkivet ble tømt, false ellers
+     */
+    boolean tomArkiv();
+    
     /**
      * Søker og henter Filmer med en gitt delstreng i tittelen.
      *

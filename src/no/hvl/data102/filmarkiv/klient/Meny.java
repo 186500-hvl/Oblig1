@@ -2,9 +2,8 @@ package no.hvl.data102.filmarkiv.klient;
 
 import java.util.Scanner;
 
-import no.hvl.data102.filmarkiv.adt.Filmarkiv;
-import no.hvl.data102.filmarkiv.adt.Film;
-import no.hvl.data102.filmarkiv.adt.Sjanger;
+import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
+import no.hvl.data102.filmarkiv.impl.*;
 
 public class Meny {
 
@@ -35,9 +34,9 @@ public class Meny {
                 case 1:
                     tekstgrensesnitt.visAlleFilmer(filmarkiv);
                     break;
-                case 2:
-                    tekstgrensesnitt.leggTilFilm(filmarkiv);
-                    break;
+               // case 2:
+               //     tekstgrensesnitt.leggTilFilm(filmarkiv);
+               //     break;
                 case 3:
                     tekstgrensesnitt.slettFilm(filmarkiv);
                     break;

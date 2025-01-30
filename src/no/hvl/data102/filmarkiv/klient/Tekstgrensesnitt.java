@@ -1,8 +1,8 @@
-import java.util.Scanner;
+package no.hvl.data102.filmarkiv.klient;
 
+import java.util.Scanner;
 import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
-import no.hvl.data102.filmarkiv.adt.Film;
-import no.hvl.data102.filmarkiv.adt.Sjanger;
+import no.hvl.data102.filmarkiv.impl.*;
 
 public class Tekstgrensesnitt {
 
@@ -29,6 +29,8 @@ public class Tekstgrensesnitt {
 
         System.out.print("Filmselskap: ");
         String filmselskap = scanner.nextLine();
+        
+        scanner.close();
 
         return new Film(filmNr, tittel, produsent, lanseringsår, sjanger, filmselskap);
     }
@@ -105,6 +107,7 @@ public class Tekstgrensesnitt {
         } else {
             System.out.println("Fant ingen film med filmnummer " + filmnr + ".");
         }
+        scanner.close();
     }
 
     // Eksempel på en metode for å søke etter tittel
@@ -113,6 +116,7 @@ public class Tekstgrensesnitt {
         System.out.print("Oppgi delstreng i tittel: ");
         String delstreng = scanner.nextLine();
         skrivUtFilmDelstrengITittel(arkiv, delstreng);
+        scanner.close();
     }
 
     // Eksempel på en metode for å søke etter produsent
@@ -121,5 +125,6 @@ public class Tekstgrensesnitt {
         System.out.print("Oppgi produsent: ");
         String produsent = scanner.nextLine();
         skrivUtFilmProdusent(arkiv, produsent);
+        scanner.close();
     }
 }
