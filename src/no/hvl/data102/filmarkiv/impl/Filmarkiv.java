@@ -103,7 +103,6 @@ import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
 		@Override
 		public boolean tomArkiv() {
 			for (int i = 0; i < antall; i++) {      
-	                // Flytt siste film til den slettede filmens plass
 	                filmer[i] = filmer[antall - 1];
 	                filmer[antall - 1] = null; 
 	                antall--;

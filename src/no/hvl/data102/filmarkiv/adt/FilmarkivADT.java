@@ -30,7 +30,7 @@ public interface FilmarkivADT {
     /**
      * Sletter alle filmer i et arkiv
      * 
-     * @return true dersom arkivet ble tømt, false ellers
+     * @return true dersom arkivet ble tømt, false ellers.
      */
     boolean tomArkiv();
     
