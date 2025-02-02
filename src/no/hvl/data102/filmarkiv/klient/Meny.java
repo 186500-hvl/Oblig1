@@ -16,8 +16,7 @@ public class Meny {
     }
 
     public void start() {
-        // Legg til noen filmer (hardkodet eller fra fil)
-        // Eksempel på hardkoding av filmer:
+       
         filmarkiv.leggTilFilm(new Film(1, "The Shawshank Redemption", "Frank Darabont", 1994, Sjanger.DRAMA, "Columbia Pictures"));
         filmarkiv.leggTilFilm(new Film(2, "The Dark Knight", "Christopher Nolan", 2008, Sjanger.ACTION, "Warner Bros."));
         
